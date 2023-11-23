@@ -1,0 +1,29 @@
+.container{
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 99vw;
+    height: 98vh;
+}
+
+.header{
+    background-color: red;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.side-bar{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+
+.main-content{
+    background-color: maroon;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
