@@ -1,10 +1,18 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+
+*{
+    font-family: Roboto;
+}
 .container{
     background-color: green;
     display: grid;
     grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
     grid-template-rows: repeat(5, 1fr);
     width: 99vw;
-    height: 98vh;
+    height: 100vh;
 }
 
 .header{
@@ -13,17 +21,46 @@
     grid-column-end: 3;
 }
 
-.side-bar{
-    background-color: blue;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-
-
 .main-content{
     background-color: maroon;
     grid-row-start: 2;
     grid-row-end: 6;
+}
+
+/* SIDEBAR */
+.side-bar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr) repeat(1, 3fr) repeat(1, 3fr);
+    gap: 25px;
+    color: white;
+    background-color: rgb(0, 175, 233);
+}
+
+.box-1{
+    display: flex;
+    align-items: center;
+}
+.box-1 p{
+    font-size: 40px;
+    display: grid;
+    align-content: center;
+}
+
+.box-2 p, .box-3 p{
+    font-size: 30px;
+}
+.side-bar [alt="logo"]{
+    width: 60px;
+    height: 60px;
+}
+.side-bar [alt="icon"]{
+    width: 30px;
+    height: 30px;
+}
+.side-bar img{
+   margin: 0 25px;
 }
