@@ -3,6 +3,10 @@
     src: url(fonts/Roboto/Roboto-Black.ttf);
 }
 
+:root{
+    --color_blue: rgb(0, 175, 233);
+}
+
 *{
     font-family: Roboto;
 }
@@ -28,6 +32,7 @@
 }
 
 /* SIDEBAR */
+
 .side-bar{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -37,7 +42,7 @@
     grid-template-rows: repeat(1, 1fr) repeat(1, 3fr) repeat(1, 3fr);
     gap: 25px;
     color: white;
-    background-color: rgb(0, 175, 233);
+    background-color: var(--color_blue)
 }
 
 .box-1{
@@ -63,4 +68,110 @@
 }
 .side-bar img{
    margin: 0 25px;
+}
+
+/* HEADER */
+
+.header{
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.row-1{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
+
+}
+
+[for="search-bar"] > [alt="icon"]{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    margin-left: 110px;
+}
+
+[src="icons/bell.svg"]{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.search{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(1, 1fr) repeat(1, 5fr);
+}
+
+.profile-information{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) repeat(1, 2fr);
+    align-items: center;
+    
+}
+.profile-information img{
+    margin-left: 60px;
+}
+
+.profile-information p{
+    font-size: 25px;
+}
+
+
+#search-bar{
+    width: 85%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #dddddd;
+    border: none;
+}
+
+.circle-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid;
+    overflow: hidden; 
+    background-image: url(pictures/nft-1.jpeg); 
+    background-size: cover;
+    background-position: center center;
+  }
+
+.row-2{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
+}
+
+.profile-information-2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
+    align-items: center;
+}
+.profile-information-2 .circle-image{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;
+}
+
+#hi{
+    font-size: 18px;
+}
+#hi + p{
+    margin-top: 0px;
+    font-size: 27px; 
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.buttons button{
+    height: 60px;
+    width: 140px;
+    background-color: var(--color_blue);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
 }
