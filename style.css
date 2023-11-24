@@ -5,31 +5,23 @@
 
 :root{
     --color_blue: rgb(0, 175, 233);
+    --color-gray: #e3e9ec;
 }
 
 *{
     font-family: Roboto;
 }
+body{
+    background-color: var(--color-gray);
+}
 .container{
-    background-color: green;
     display: grid;
     grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 231px) repeat(1, 1fr);
     width: 99vw;
     height: 100vh;
 }
 
-.header{
-    background-color: red;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.main-content{
-    background-color: maroon;
-    grid-row-start: 2;
-    grid-row-end: 6;
-}
 
 /* SIDEBAR */
 
@@ -37,7 +29,7 @@
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row-end: 3;
     display: grid;
     grid-template-rows: repeat(1, 1fr) repeat(1, 3fr) repeat(1, 3fr);
     gap: 25px;
@@ -71,11 +63,14 @@
 }
 
 /* HEADER */
-
 .header{
-    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    background-color: white;
+    box-shadow: 3px 3px 7px #b9b9b9;
+    padding-bottom: 15px;
 }
 
 .row-1{
@@ -122,7 +117,7 @@
     width: 85%;
     height: 40px;
     border-radius: 20px;
-    background-color: #dddddd;
+    background-color: var(--color-gray);
     border: none;
 }
 
@@ -155,6 +150,7 @@
 
 #hi{
     font-size: 18px;
+    margin: 10px 0px;
 }
 #hi + p{
     margin-top: 0px;
@@ -174,4 +170,60 @@
     border: none;
     border-radius: 30px;
     font-size: 25px;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(2, 550px) repeat(1, 1fr);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 20px 30px;
+}
+
+.column-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.column-1 > p{
+    font-size: 27px;
+}
+.your-projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+.project{
+    background-color: white;
+    border-left: 10px solid #f8aa00;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px #b9b9b9;
+}
+.project p{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+.column-2{
+    
+}
+
+
+.icons-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 50px;
+}
+.icons{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.icons img{
+    width: 30px;
+    height: 30px;
 }
