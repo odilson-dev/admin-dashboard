@@ -4,20 +4,22 @@
 }
 
 :root{
-    --color_blue: rgb(0, 175, 233);
+    --color_blue: rgb(3, 150, 199);
     --color-gray: #e3e9ec;
 }
 
 *{
     font-family: Roboto;
 }
+
 body{
     background-color: var(--color-gray);
 }
+
 .container{
     display: grid;
     grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
-    grid-template-rows: repeat(1, 231px) repeat(1, 1fr);
+    grid-template-rows: repeat(1, 231px) repeat(1, 1fr) repeat(1, 150px);
     width: 99vw;
     height: 100vh;
 }
@@ -180,6 +182,7 @@ body{
     grid-row-start: 2;
     grid-row-end: 3;
     padding: 20px 30px;
+    padding-bottom: 50px;
     gap: 30px;
 }
 
@@ -318,3 +321,29 @@ h1{
 .trend:nth-child(4) > .circle-image{
     background-image: url(pictures/nft-4.jpeg);
 }
+/* FOOTER */
+
+.footer{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 25px;
+    color: white;
+    background-color: #2d3669;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+i{
+    font-size: 30px;
+}
+a{
+    color: white;
+}
+.red-heart {
+    color: red; /* Change the color */
+    font-size: 30px; /* Change the size */
+}
+#odilsonjs{
+    color: #f8aa00;
+    text-decoration: none;
+}
+
