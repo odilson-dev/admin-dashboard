@@ -237,12 +237,10 @@ h1{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
 }
-#row-1{
-}
 
-#row-2{
-    background-color: mediumaquamarine;
-}
+
+/* ANNOUNCEMENTS */
+
 .announcements{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -266,4 +264,57 @@ h1{
 
 .announcements-child:nth-child(1), .announcements-child:nth-child(2){
     border-bottom: 1px solid var(--color-gray);
+}
+
+/* TRENDING */
+#row-2{
+    display: grid;
+    grid-template-rows: repeat(1, 31.5) repeat(1, 1fr);
+}
+#row-2 > p{
+    display: grid;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.trending{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px #b9b9b9;
+}
+
+.trend{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) repeat(1, 3fr);
+    align-items: center;
+}
+.trend-text{
+     margin-left: 15px;
+}
+.trend-text > p{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    margin-top: 0;
+}
+.trend-text > h1{
+    margin-bottom: 8px;
+    font-weight: lighter;
+}
+.trend > .circle-image{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.trend:nth-child(1) > .circle-image{
+    background-image: url(pictures/nft-2.png);
+}
+.trend:nth-child(3) > .circle-image{
+    background-image: url(pictures//nft-3.jpeg);
+}
+.trend:nth-child(4) > .circle-image{
+    background-image: url(pictures/nft-4.jpeg);
 }
