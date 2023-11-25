@@ -178,7 +178,7 @@ body{
 
 .main-content{
     display: grid;
-    grid-template-columns: repeat(2, 550px) repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr) repeat(1, 1fr);
     grid-row-start: 2;
     grid-row-end: 3;
     padding: 20px 30px;
@@ -294,9 +294,7 @@ h1{
     grid-template-columns: repeat(1, 1fr) repeat(1, 3fr);
     align-items: center;
 }
-.trend-text{
-     margin-left: 15px;
-}
+
 .trend-text > p{
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
@@ -326,14 +324,17 @@ h1{
 .footer{
     text-align: center;
     padding: 20px 0 20px 0;
-    font-size: 25px;
-    color: white;
-    background-color: #2d3669;
+    font-size: 30px;
+    color: black;
+    background-color: white;
     grid-column-start: 1;
     grid-column-end: 3;
+    box-shadow: -3px -3px 7px #b9b9b9;
 }
 i{
-    font-size: 30px;
+    font-size: 40px;
+    color: black;
+
 }
 a{
     color: white;
@@ -343,7 +344,7 @@ a{
     font-size: 30px; /* Change the size */
 }
 #odilsonjs{
-    color: #f8aa00;
+    color: var(--color_blue);
     text-decoration: none;
 }
 
