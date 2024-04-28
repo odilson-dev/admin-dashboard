@@ -59,7 +59,7 @@ A Simple Dashboard design built with HTML & CSS with,
 https://www.theodinproject.com/lessons/intermediate-html-and-css-admin-dashboard
 
 ## Live Preview
-https://odilsonjs.github.io/admin-dashboard/
+https://odilson-dev.github.io/admin-dashboard/
 
 ## GitHub Repos
 https://github.com/odilsonjs/admin-dashboard
